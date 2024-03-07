@@ -38,6 +38,7 @@ gitclone CROWSNEST_REPO crowsnest
 
 ## Step 3: grep PKGLIST from install.sh for dependencies
 echo_green "Generating packages file ..."
+get_pkglist
 grep "PKGLIST=" "${CN_BUILD_INSTALL_SH}" >> "${CN_BUILD_PACKAGE_FILE}"
 
 ## Step 4: Rename PKGLIST to Module usable Var
