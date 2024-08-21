@@ -14,8 +14,8 @@ export BASE_ROOT_PARTITION=1
 export BASE_BOOT_MOUNT_PATH=boot
 
 # Image source
-DOWNLOAD_URL_CHECKSUM="https://github.com/armbian/community/releases/download/24.8.0-trunk.596/Armbian_community_24.8.0-trunk.596_Orangepi3-lts_bookworm_current_6.6.44_minimal.img.xz.sha"
-DOWNLOAD_URL_IMAGE="https://github.com/armbian/community/releases/download/24.8.0-trunk.596/Armbian_community_24.8.0-trunk.596_Orangepi3-lts_bookworm_current_6.6.44_minimal.img.xz"
+DOWNLOAD_URL_CHECKSUM="https://armbian.lv.auroradev.org/archive/orangepi3-lts/archive/Armbian_23.5.1_Orangepi3-lts_jammy_current_6.1.30_minimal.img.xz.sha"
+DOWNLOAD_URL_IMAGE="https://armbian.lv.auroradev.org/archive/orangepi3-lts/archive/Armbian_23.5.1_Orangepi3-lts_jammy_current_6.1.30_minimal.img.xz"
 
 # export Variables
 export BASE_ARCH
