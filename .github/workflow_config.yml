@@ -26,7 +26,7 @@ buildtest:
   # raspberry/rpi32
   # - raspberry/rpi64
   # raspberry/opicm4
-  raspberry/OPi3LTS
+   raspberry/OPi3LTS
 
 # This is used to setup release build chain.
 # Each entry will be used in setup matrix for releases
@@ -41,4 +41,4 @@ release:
   # Raspberry Pi OS based images
   # raspberry/rpi32
   # - raspberry/rpi64
-  raspberry/OPi3LTS
+   raspberry/OPi3LTS
