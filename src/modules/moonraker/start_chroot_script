@@ -37,7 +37,10 @@ check_install_pkgs git
 pushd "/home/${BASE_USER}" &> /dev/null || exit 1
 
 ## Step 2: clone moonraker repo
-gitclone --progress --verbose MOONRAKER_REPO moonraker
+cat MOONRAKER_REPO
+cat "${MN_BUILD_INSTALL_SH}"
+cat "${MN_BUILD_PACKAGE_FILE}"
+gitclone MOONRAKER_REPO moonraker
 
 ## Step 3: grep PKGLIST from install-moonraker.sh for dependencies
 echo_green "Generating packages file ..."
