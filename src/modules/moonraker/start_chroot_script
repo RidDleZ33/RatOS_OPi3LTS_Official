@@ -43,14 +43,17 @@ gitclone MOONRAKER_REPO moonraker
 echo_green "Generating packages file ..."
 echo "grep "PKGLIST=" "${MN_BUILD_INSTALL_SH}" >> "${MN_BUILD_PACKAGE_FILE}" "
 grep "PKGLIST=" "${MN_BUILD_INSTALL_SH}" >> "${MN_BUILD_PACKAGE_FILE}"
+
 ## Step 4: Rename PKGLIST to Module usable Var
 echo_green "Rename variable PKGLIST to MOONRAKER_DEPS ..."
+echo "sed -i 's/PKGLIST/MOONRAKER_DEPS/g' "${MN_BUILD_PACKAGE_FILE}" "
 sed -i 's/PKGLIST/MOONRAKER_DEPS/g' "${MN_BUILD_PACKAGE_FILE}"
 
 ## Step 5: Source cn_package.lst file
 # shellcheck disable=SC1090
 # Shellcheck has to be disabled here,
 # because it is an dynamic generated file and not checkable
+echo ". "${MN_BUILD_PACKAGE_FILE}" "
 . "${MN_BUILD_PACKAGE_FILE}"
 
 ## Step 6: Install packages
