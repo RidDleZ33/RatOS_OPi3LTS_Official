@@ -43,7 +43,7 @@ echo "spidev" >> /etc/modules
 
 # Step 3: Disable bluetooth and related services
 echo_green "Disabling Bluetooth related services..."
-systemctl_if_exists disable hciuart.service
+# systemctl_if_exists disable hciuart.service
 systemctl_if_exists disable bluetooth.service
 systemctl_if_exists disable bluealsa.service
 
